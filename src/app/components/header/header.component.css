@@ -4,12 +4,13 @@
   padding: 4.8rem 3.2rem;
   height: 3rem;
   background-color: hsla(0, 0%, 100%, 0.8);
+  position: relative;
 }
 .nav-bar {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-top: 2.4rem;
+  margin-top: 2rem;
 }
 .header-logo {
   height: 2rem;
@@ -45,10 +46,10 @@
 .nav-links:active {
   color: #2f22c3;
 }
-
 .btn {
   margin-left: auto;
 }
+
 .btn-item {
   font-family: "Epilogue", sans-serif;
   font-size: 1.6rem;
@@ -72,4 +73,14 @@
 }
 .btn-item-right:hover {
   background-color: #261b9c;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  height: 6.4rem;
+  padding: 4.8rem 3.2rem;
 }
