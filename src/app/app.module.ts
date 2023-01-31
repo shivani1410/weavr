@@ -7,8 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { HeroComponent } from './components/hero/hero.component';
+import { AboutComponent } from './components/about/about.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
