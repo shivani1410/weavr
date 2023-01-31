@@ -1,0 +1,60 @@
+<section class="about">
+  <div class="abt-img-box">
+    <picture>
+      <source srcset="/assets/about.png" type="image/png" />
+      <img src="/assets/about.png" alt="designer image" class="abt-img" />
+    </picture>
+  </div>
+  <div class="abt-txt-box">
+    <h2 class="abt-heading-1">
+      Financial services that <span class="span-text">2x your revenue</span>
+    </h2>
+    <div class="abt-container">
+      <div class="accordian" *ngFor="let data of aboutList; let i = index">
+        <div
+          (click)="toggleAccordian(i)"
+          [ngClass]="{
+            open: activeIndex[i] == true,
+            close: activeIndex[i] != true
+          }"
+        >
+          <div class="head">
+            <mat-icon
+              class="add-icon"
+              aria-hidden="false"
+              aria-label="add icon"
+              fontIcon="add"
+            ></mat-icon>
+            <mat-icon
+              class="remove-icon"
+              aria-hidden="false"
+              aria-label="add icon"
+              fontIcon="remove"
+            ></mat-icon>
+            <p class="list-head">{{ data.head }}</p>
+          </div>
+          <article>
+            <p class="list-text">
+              {{ data.text }}
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="abt-text-box">
+    <p class="abt-heading-2">
+      Build and launch in just <span class="span-text">5 weeks</span>
+    </p>
+    <p class="abt-text">
+      Launch, validate and earn revenue from your new financial superpowers in
+      just a few weeks and at a fraction of the cost of Banking as a Service.
+    </p>
+  </div>
+  <div class="abt-image-box abt-img-2">
+    <picture>
+      <source srcset="/assets/about-2.png" type="image/png" />
+      <img src="/assets/about-2.png" alt="cube image" />
+    </picture>
+  </div>
+</section>

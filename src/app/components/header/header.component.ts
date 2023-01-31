@@ -25,7 +25,7 @@ export class HeaderComponent implements AfterViewInit {
       {
         root: null,
         threshold: 0,
-        rootMargin: '-500px',
+        rootMargin: '-300px',
       }
     );
     obs.observe(sectionHero);
