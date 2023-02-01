@@ -8,8 +8,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
+import { QuoteComponent } from './components/quote/quote.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent, QuoteComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
