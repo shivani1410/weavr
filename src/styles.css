@@ -22,7 +22,7 @@ Tint:
 
 Shades: #261b9c
 
-Accents: #f27371
+Accents: #f27371, #847de1,#6a64b4
 Grey:#000,
 rgb(84,80,94)
 hsla(0,0%,100%,.8)
@@ -41,6 +41,7 @@ SPACING SYSTEM (px)
 
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
