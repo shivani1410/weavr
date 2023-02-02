@@ -9,8 +9,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
 import { QuoteComponent } from './components/quote/quote.component';
+import { SolutionsComponent } from './components/solutions/solutions.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent, QuoteComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent, QuoteComponent, SolutionsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,0 +1,141 @@
+.solution {
+  padding: 8rem;
+}
+.sol-box {
+  background-color: #000;
+  border-radius: 3.6rem;
+  padding: 6.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+.sol-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
+  padding-left: 2rem;
+  gap: 4.8rem;
+}
+.sol-heading {
+  font-size: 4.8rem;
+  color: #fff;
+}
+.sol-heading span {
+  color: #f27371;
+}
+/************Accordian*************/
+
+.sol-accordian {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 1;
+}
+.accordian {
+  max-width: 80%;
+  border-top: 0.5px solid #aaa;
+  padding-right: 3.6rem;
+}
+.accordian:first-child {
+  border-top: none;
+}
+.head {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-top: 1.8rem;
+}
+.add-icon,
+.remove-icon {
+  font-size: 3.2rem;
+  color: #f27371;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.list-head {
+  color: #f27371;
+  font-size: 1.8rem;
+  font-family: "Epilogue", sans-serif;
+}
+.list-text {
+  width: 100%;
+}
+.open {
+  font-size: 1.6rem;
+  color: #fff;
+  /* padding: 32px; */
+  cursor: pointer;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+.open .list-head {
+  color: #f27371;
+  margin-bottom: 1.6rem;
+}
+.open article {
+  display: block;
+}
+.close article {
+  display: none;
+}
+.open .add-icon {
+  display: none;
+}
+.close .add-icon {
+  display: inline-block;
+}
+.open .remove-icon {
+  display: inline-block;
+}
+.close .remove-icon {
+  display: none;
+}
+
+/*************************/
+
+.btn-explore:link,
+.btn-explore:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 2.4rem;
+  background-color: #2f22c3;
+  max-width: max-content;
+}
+.btn-explore:hover,
+.btn-explore:active {
+  background-color: #261b9c;
+}
+
+/************Card*************/
+.sol-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  padding: 3.2rem;
+  row-gap: 3rem;
+}
+.card:link,
+.card:visited {
+  background-color: transparent;
+  border: 0.2px solid #999;
+  border-radius: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 2.4rem;
+  text-decoration: none;
+}
+.card-img {
+  overflow: hidden;
+  width: 60%;
+}
+.card-text {
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1.2;
+
+  font-style: normal;
+}

@@ -1,0 +1,75 @@
+<section class="solution">
+  <div class="sol-box">
+    <div class="sol-text">
+      <p class="sol-heading">
+        Plug-and-play financial solutions that give your
+        <span> software superpowers </span>
+      </p>
+
+      <div class="sol-accordian">
+        <div class="accordian" *ngFor="let data of aboutList; let i = index">
+          <div
+            (click)="toggleAccordian(i)"
+            [ngClass]="{
+              open: activeIndex[i] == true,
+              close: activeIndex[i] != true
+            }"
+          >
+            <div class="head">
+              <mat-icon
+                class="add-icon"
+                aria-hidden="false"
+                aria-label="add icon"
+                fontIcon="add"
+              ></mat-icon>
+              <mat-icon
+                class="remove-icon"
+                aria-hidden="false"
+                aria-label="add icon"
+                fontIcon="remove"
+              ></mat-icon>
+              <p class="list-head">{{ data.head }}</p>
+            </div>
+            <article>
+              <p class="list-text">
+                {{ data.text }}
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn-explore"> Explore our solutions </a>
+    </div>
+    <div class="sol-cards">
+      <a href="#" class="card">
+        <picture>
+          <source srcset="/assets/icon-1.png" type="image/png" />
+          <img src="/assets/icon-1.png" alt="icon 1 image" class="card-img" />
+        </picture>
+        <p class="card-text">Employee Finance Plug-in</p>
+      </a>
+
+      <a href="#" class="card">
+        <picture>
+          <source srcset="/assets/icon-2.png" type="image/png" />
+          <img src="/assets/icon-2.png" alt="icon 2 image" class="card-img" />
+        </picture>
+        <p class="card-text">Supplier Finance Plug-in</p>
+      </a>
+      <a href="#" class="card">
+        <picture>
+          <source srcset="/assets/icon-3.png" type="image/png" />
+          <img src="/assets/icon-3.png" alt="icon 3 image" class="card-img" />
+        </picture>
+        <p class="card-text">Worker Finance Plug-in</p>
+      </a>
+      <a href="#" class="card">
+        <picture>
+          <source srcset="/assets/icon-4.png" type="image/png" />
+          <img src="/assets/icon-4.png" alt="icon 4 image" class="card-img" />
+        </picture>
+        <p class="card-text">Bespoke solution</p>
+      </a>
+    </div>
+  </div>
+</section>
