@@ -1,0 +1,45 @@
+.innovation {
+  margin: 9.6rem 16rem;
+}
+.inn-box {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  column-gap: 8rem;
+}
+.inno-text {
+  padding: 4.8rem;
+}
+.inno-head {
+  font-size: 4.9rem;
+  letter-spacing: -2px;
+}
+.highlight {
+  color: #f27371;
+}
+.inno-desc {
+  font-size: 1.6rem;
+  color: #666;
+  line-height: 1.2;
+  margin-top: 3rem;
+}
+.inno-link:link,
+.inno-link:visited {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  color: #f27371;
+  text-decoration: none;
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+}
+.inno-link:hover,
+.inno-link:active {
+  color: #793a39;
+}
+.arrow-forward {
+  font-size: 1.6rem;
+}
+.inno-img {
+  max-width: 100%;
+  border-radius: 2rem;
+}
