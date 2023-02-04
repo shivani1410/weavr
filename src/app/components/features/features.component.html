@@ -1,0 +1,30 @@
+<section class="features-section">
+    <div class="feature" *ngFor="let data of gridData">
+      <p class="heading">{{data.heading}}</p>
+      <div class="col">
+        <div class="col-img">
+            <picture>
+                <source srcset="{{data.colImg1}}" type="image/svg">
+                <img src="{{data.colImg1}}" alt="card icon" class="image"/>
+            </picture>
+        </div>
+        <div class="col-text">
+            <p class="col-head">{{data.colHead1}}</p>
+            <p class="col-data">{{data.colData1}}</p>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="col-img">
+            <picture>
+                <source srcset="{{data.colImg2}}" type="image/svg">
+                <img src="{{data.colImg2}}" alt="card icon" class="image"/>
+            </picture>
+        </div>
+        <div class="col-text">
+            <p class="col-head">{{data.colHead2}}</p>
+            <p class="col-data">{{data.colData2}}</p>
+        </div>
+      </div>
+    </div>
+</section>

@@ -11,8 +11,9 @@ import { AboutComponent } from './components/about/about.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
 import { InnovationComponent } from './components/innovation/innovation.component';
+import { FeaturesComponent } from './components/features/features.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent, QuoteComponent, SolutionsComponent, InnovationComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent, QuoteComponent, SolutionsComponent, InnovationComponent, FeaturesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
