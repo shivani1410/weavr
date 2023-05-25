@@ -12,13 +12,15 @@ import { QuoteComponent } from './components/quote/quote.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
 import { InnovationComponent } from './components/innovation/innovation.component';
 import { FeaturesComponent } from './components/features/features.component';
+import { NextStepComponent } from './components/next-step/next-step.component';
+
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent, QuoteComponent, SolutionsComponent, InnovationComponent, FeaturesComponent],
+  declarations: [AppComponent, HeaderComponent, HeroComponent, AboutComponent, QuoteComponent, SolutionsComponent, InnovationComponent, FeaturesComponent, NextStepComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],
